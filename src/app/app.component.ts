@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'segunda-aplicacao';
+     public exibirCoteudo = false;
+
+     public toggleConteudo(){
+        this.exibirCoteudo = !this.exibirCoteudo;
+     }
+
+     public livros = [
+      'Como morrem os pobres e outros ensaios',
+      'A revolução dos bichos',
+      '1988'
+   ];
 }
